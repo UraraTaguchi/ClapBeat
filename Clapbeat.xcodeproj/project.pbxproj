@@ -14,6 +14,11 @@
 		E4B40D901AA1B9F5006D4605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B40D8F1AA1B9F5006D4605 /* Images.xcassets */; };
 		E4B40D931AA1B9F5006D4605 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B40D911AA1B9F5006D4605 /* LaunchScreen.xib */; };
 		E4B40D9F1AA1B9F5006D4605 /* ClapbeatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B40D9E1AA1B9F5006D4605 /* ClapbeatTests.m */; };
+		E4B40DAB1AA1BAF3006D4605 /* clap-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B40DA81AA1BAF3006D4605 /* clap-button.png */; };
+		E4B40DAC1AA1BAF3006D4605 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = E4B40DA91AA1BAF3006D4605 /* clap.wav */; };
+		E4B40DAD1AA1BAF3006D4605 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B40DAA1AA1BAF3006D4605 /* icon.png */; };
+		E4B40DAF1AA1BB49006D4605 /* Clap.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B40DAE1AA1BB49006D4605 /* Clap.m */; };
+		E4B40DB21AA1BB92006D4605 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B40DB11AA1BB92006D4605 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,12 @@
 		E4B40D981AA1B9F5006D4605 /* ClapbeatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClapbeatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B40D9D1AA1B9F5006D4605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B40D9E1AA1B9F5006D4605 /* ClapbeatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClapbeatTests.m; sourceTree = "<group>"; };
+		E4B40DA81AA1BAF3006D4605 /* clap-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clap-button.png"; path = "../../iPhone宿題/3_clap/clap-button.png"; sourceTree = "<group>"; };
+		E4B40DA91AA1BAF3006D4605 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clap.wav; path = "../../iPhone宿題/3_clap/clap.wav"; sourceTree = "<group>"; };
+		E4B40DAA1AA1BAF3006D4605 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../iPhone宿題/3_clap/icon.png"; sourceTree = "<group>"; };
+		E4B40DAE1AA1BB49006D4605 /* Clap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clap.m; sourceTree = "<group>"; };
+		E4B40DB01AA1BB61006D4605 /* Clap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clap.h; sourceTree = "<group>"; };
+		E4B40DB11AA1BB92006D4605 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B40DB21AA1BB92006D4605 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,7 @@
 		E4B40D761AA1B9F5006D4605 = {
 			isa = PBXGroup;
 			children = (
+				E4B40DB11AA1BB92006D4605 /* AudioToolbox.framework */,
 				E4B40D811AA1B9F5006D4605 /* Clapbeat */,
 				E4B40D9B1AA1B9F5006D4605 /* ClapbeatTests */,
 				E4B40D801AA1B9F5006D4605 /* Products */,
@@ -81,6 +94,9 @@
 		E4B40D811AA1B9F5006D4605 /* Clapbeat */ = {
 			isa = PBXGroup;
 			children = (
+				E4B40DA81AA1BAF3006D4605 /* clap-button.png */,
+				E4B40DA91AA1BAF3006D4605 /* clap.wav */,
+				E4B40DAA1AA1BAF3006D4605 /* icon.png */,
 				E4B40D861AA1B9F5006D4605 /* AppDelegate.h */,
 				E4B40D871AA1B9F5006D4605 /* AppDelegate.m */,
 				E4B40D891AA1B9F5006D4605 /* ViewController.h */,
@@ -89,6 +105,8 @@
 				E4B40D8F1AA1B9F5006D4605 /* Images.xcassets */,
 				E4B40D911AA1B9F5006D4605 /* LaunchScreen.xib */,
 				E4B40D821AA1B9F5006D4605 /* Supporting Files */,
+				E4B40DAE1AA1BB49006D4605 /* Clap.m */,
+				E4B40DB01AA1BB61006D4605 /* Clap.h */,
 			);
 			path = Clapbeat;
 			sourceTree = "<group>";
@@ -199,9 +217,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B40DAC1AA1BAF3006D4605 /* clap.wav in Resources */,
 				E4B40D8E1AA1B9F5006D4605 /* Main.storyboard in Resources */,
+				E4B40DAD1AA1BAF3006D4605 /* icon.png in Resources */,
 				E4B40D931AA1B9F5006D4605 /* LaunchScreen.xib in Resources */,
 				E4B40D901AA1B9F5006D4605 /* Images.xcassets in Resources */,
+				E4B40DAB1AA1BAF3006D4605 /* clap-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B40D8B1AA1B9F5006D4605 /* ViewController.m in Sources */,
+				E4B40DAF1AA1BB49006D4605 /* Clap.m in Sources */,
 				E4B40D881AA1B9F5006D4605 /* AppDelegate.m in Sources */,
 				E4B40D851AA1B9F5006D4605 /* main.m in Sources */,
 			);
